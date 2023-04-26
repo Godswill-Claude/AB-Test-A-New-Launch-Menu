@@ -1,10 +1,12 @@
 # AB-Test-A-New-Launch-Menu
-Overview 
+
+## Overview 
 This project aims to perform an AB test experiment to generate sufficient data in order to assist a new management of a company to decide if it should roll out a new launch menu to its stores.
 
 The software application used for the entire analytical process and model building is Alteryx. 
 The following steps were taken to get the desired results.
-Step 1: Plan Your Analysis
+
+## Step 1: Plan Your Analysis
 Since profit is represented in the given dataset as the gross_margin variable, the performance metric I intend to use is WEEKLY GROSS MARGIN (at least 18% increase in profit growth compared to the comparative period – the ensuing jump in marketing budget – while compared to the control stores; otherwise known as incremental lift). The predicted impact to profitability should be high enough to justify the increased marketing budget.
 
 If the 10 treatment stores (units) in the 2 cities (Denver and Chicago) experienced such an increase, then the new management can make an informed decision to apply the menu changes to all stores in the company’s chain, otherwise it would not. 
@@ -13,8 +15,7 @@ The comparison/baseline period (used to compare or measure performance metric in
 
 The data will be aggregated at the weekly level since such businesses usually consider patronage at the weekly level, assuming that the average customer visits a store once every week. More so, aggregating at the weekly level helps to remove missing values which will cause the A/B Trends and Control tools to error.
   
-
-Step 2: Clean Up Your Data 
+## Step 2: Clean Up Your Data 
 The following three raw data files were given to us:
 •	RoundRoastersTransactions file: Contains transaction data for all stores from 2015-January-21 to 2016-August-18
 •	round-roaster-stores file: Contains a listing of all Round Roasters stores with all information about them 
