@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RoundRoastersTransactions.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Invoice Number" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Invoice Date" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="SKU" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Product" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="QTY" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Size" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Gross Margin" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Sales" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\RoundRoastersTransactions.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="126" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\user\AppData\Local\Temp\Engine_8416_3ef9d0b36ab445cfb05960c9e142fb7d_\Engine_6116_d595dfa8c8a8414f87585fcacdb91367_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="126" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StoreID" selected="True" type="Int64" size="8" />
+            <SelectField field="Invoice Number" selected="True" type="Int64" size="8" />
+            <SelectField field="Invoice Date" selected="True" type="Date" size="10" />
+            <SelectField field="SKU" selected="False" />
+            <SelectField field="Gross Margin" selected="True" type="FixedDecimal" size="21.2" />
+            <SelectField field="Sales" selected="True" type="FixedDecimal" size="21.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="186" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Invoice Date]&gt;= '2015-02-06' AND [Invoice Date]&lt;='2016-07-21'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Invoice Date]&gt;= '2015-02-06' AND [Invoice Date]&lt;='2016-07-21'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FLOOR(DateTimeDiff([Invoice Date], '2015-02-06','days')/7+1)" field="week" size="8" type="Int64" />
+            <FormulaField expression="DateTimeAdd('2015-02-06',7*[week]-7,'days')" field="week_start" size="10" type="Date" />
+            <FormulaField expression="DateTimeAdd([week_start],6,'days')" field="week_end" size="10" type="Date" />
+            <FormulaField expression="IIF([Product]='Espresso', 1, 0)" field="Product_flag" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>week = FLOOR(DateTimeDiff([Invoice Date], '2015-02-06','days')/7+1)
+week_start =...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="week" action="CountDistinct" rename="CountDistinct_week" />
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>CountDistinct_week</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-07-25 21:48:48</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>76</Operand>
+              <StartDate>2021-07-25 21:48:48</StartDate>
+              <EndDate>2021-07-25 21:48:48</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CountDistinct_week] = 76</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="510" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Invoice Number" selected="True" input="Right_" />
+                <SelectField field="Right_Invoice Date" selected="True" input="Right_" />
+                <SelectField field="Right_Gross Margin" selected="True" input="Right_" />
+                <SelectField field="Right_Sales" selected="True" input="Right_" />
+                <SelectField field="Right_week" selected="True" input="Right_" />
+                <SelectField field="Right_week_start" selected="True" input="Right_" />
+                <SelectField field="Right_week_end" selected="True" input="Right_" />
+                <SelectField field="Right_Product_flag" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="Invoice Number" action="GroupBy" rename="Invoice Number" />
+            <SummarizeField field="Invoice Date" action="GroupBy" rename="Invoice Date" />
+            <SummarizeField field="week" action="GroupBy" rename="week" />
+            <SummarizeField field="week_start" action="GroupBy" rename="week_start" />
+            <SummarizeField field="week_end" action="GroupBy" rename="week_end" />
+            <SummarizeField field="Gross Margin" action="Sum" rename="Sum_Gross Margin" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+            <SummarizeField field="Product_flag" action="CountDistinctNonNull" rename="CountDistinctNonNull_Product_flag" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="week" action="GroupBy" rename="week" />
+            <SummarizeField field="week_start" action="GroupBy" rename="week_start" />
+            <SummarizeField field="week_end" action="GroupBy" rename="week_end" />
+            <SummarizeField field="Invoice Number" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\WEEKLY STORE TRAFFIC.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>WEEKLY STORE TRAFFIC.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="342" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>round-roaster-stores.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Sq_Ft" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="AvgMonthSales" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Right_Name" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Phone Number" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Street Combined" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Street 1" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Street 2" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Street 3" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="State" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Coordinates" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Timezone" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Current Timezone Offset" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+            <Field name="Olson Timezone" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\round-roaster-stores.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="342" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>treatment-stores.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Sq_Ft" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="AvgMonthSales" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Phone Number" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Street Combined" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Street 1" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Street 2" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Street 3" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Coordinates" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Timezone" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Current Timezone Offset" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Olson Timezone" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+            <Field name="Right_State" size="254" source="File: D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\treatment-stores.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StoreID" selected="True" type="Int64" size="8" />
+            <SelectField field="Sq_Ft" selected="True" type="Int64" size="8" />
+            <SelectField field="AvgMonthSales" selected="True" type="FixedDecimal" size="21.1" />
+            <SelectField field="Right_Name" selected="False" />
+            <SelectField field="Phone Number" selected="False" />
+            <SelectField field="Street Combined" selected="False" />
+            <SelectField field="Street 1" selected="False" />
+            <SelectField field="Street 2" selected="False" />
+            <SelectField field="Street 3" selected="False" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="State" selected="False" />
+            <SelectField field="Postal Code" selected="False" />
+            <SelectField field="Country" selected="False" />
+            <SelectField field="Coordinates" selected="False" />
+            <SelectField field="Latitude" selected="False" />
+            <SelectField field="Longitude" selected="False" />
+            <SelectField field="Timezone" selected="False" />
+            <SelectField field="Current Timezone Offset" selected="False" />
+            <SelectField field="Olson Timezone" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StoreID" selected="True" type="Int64" size="8" />
+            <SelectField field="Sq_Ft" selected="True" type="Int64" size="8" />
+            <SelectField field="AvgMonthSales" selected="True" type="FixedDecimal" size="21.2" />
+            <SelectField field="Region" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Treatment'" field="Test_group" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Test_group = 'Treatment'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Left_Sq_Ft" selected="True" input="Left_" />
+                <SelectField field="Left_AvgMonthSales" selected="True" input="Left_" />
+                <SelectField field="Left_Region" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Sq_Ft" selected="False" rename="Right_Sq_Ft" input="Right_" />
+                <SelectField field="Right_AvgMonthSales" selected="False" rename="Right_AvgMonthSales" input="Right_" />
+                <SelectField field="Right_Region" selected="False" rename="Right_Region" input="Right_" />
+                <SelectField field="Right_Test_group" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'control'" field="Test_group" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Test_group = 'control'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="702" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\STORE LIST.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>STORE LIST.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="678" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="week" action="GroupBy" rename="week" />
+            <SummarizeField field="week_start" action="GroupBy" rename="week_start" />
+            <SummarizeField field="week_end" action="GroupBy" rename="week_end" />
+            <SummarizeField field="Sum_Gross Margin" action="Sum" rename="Sum_Sum_Gross Margin" />
+            <SummarizeField field="Sum_Sales" action="Sum" rename="Sum_Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\Data Science\Predictive Analytics for Business NANODEGREE\CORE CURRICULUM\PART 5 - A-B TESTING\LESSON 5 - PROJECT - AB-TEST, A NEW LAUNCH MENU\SALES ANALYSIS.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SALES ANALYSIS.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="40" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Left" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="40" Connection="Join" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DATA PREPARATION workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d98f2c9a-c648-436b-bb09-436efcb001e7" />
+      <Telemetry>
+        <PreviousWorkflowId value="0463a0c3-d32b-427e-b731-149967047e9a" />
+        <OriginWorkflowId value="0463a0c3-d32b-427e-b731-149967047e9a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
