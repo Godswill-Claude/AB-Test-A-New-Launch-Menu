@@ -70,7 +70,7 @@ I aggregated the data to the store week level by adding a SUMMARISE tool and con
 
 Using the three data files created, we will then match our treatment and control stores to calculate the sales lift.
 
-Step 3: Match Treatment and Control Units
+## Step 3: Match Treatment and Control Units
 In this section, we are interested in creating the trend and seasonality variables, and using them along with the other control variable(s) to match two control units to each treatment unit. Treatment stores were matched to control stores in the same region. I also endeavored to calculate the number of transactions per store per week and used 12 periods to calculate trend and seasonality.
 
 Important variables here include 
@@ -105,7 +105,7 @@ Hence, I dragged the AB CONTROLS tool to the canvass and connected the data with
 Next, I combined all the data from both regions using the UNION tool since both data streams are the same, and usually no configuration of the UNION tool is required. I then ran the workflow and took a look at the output. Looking at my output, I could see that I have the control-treatment pairs. However, we need to add the stores attribute information from the stores information dataset (STORE LIST) to perform the analysis.
 Hence, I connected the STORE LIST dataset to the R-input of a JOIN tool, while the output of the UNION tool was connected to the R-input of the JOIN tool, and in the configuration panel of the JOIN tool I selected treatments for the Left and StoreID for the Right whilst removing unnecessary fields. Upon running the workflow, I noticed that we now have a dataset that can be used to perform the analysis – a list of control and treatment pairs with their region and associated test group. Thus, I saved the dataset using an OUTPUT DATA tool.
 We are now ready to perform the analysis and summarise the results of the test.
-Step 4: Analysis and Writeup
+## Step 4: Analysis and Writeup
 We are going to use the two datasets that we previously created. The control-treatments pair data will be used to provide the identification data concerning which 2 pairs of stores will control a treatment unit, and the stores sales analysis dataset will be used to provide performance data associated with the control and treatment stores.
 
 Thus, using two INPUT DATA tools, I brought both datasets into a new canvass in alteryx.
